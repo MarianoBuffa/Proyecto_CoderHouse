@@ -17,8 +17,7 @@ header {
 .header__navegador {
     text-align: center;
     float: right;
-    margin-right: 5vh;
-    border: teal 5px double;
+    margin-right: 3rem;
 }
 
 .header__navegador ul {
@@ -43,7 +42,6 @@ header {
 }
 
 .header__Titulo-Principal {
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -81,13 +79,12 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 10px;
-    border: solid darkgreen;
     margin: 2rem;
 }
 
 .Primera-Seccion__presentacion {
-    width: 70%;
-    padding: 2rem;
+    width: 60%;
+
 }
 
 .Primera-Seccion__presentacion h3 {
@@ -97,14 +94,9 @@ header {
     margin-bottom: 10px;
 }
 
-.Primera-Seccion__imagen {
-    width: 30%;
-    padding: 2rem;
-}
-
 /* Fin seccion Slider */
 
-/* Comienza Seccion Tarjetas - Aqui esta la animacion de las cards del Inicio */
+/* Comienza Seccion Tarjetas - Aqui esta la animacion de las cards del BLOG */
 
 .Titulo__Seccion-Dos{
     text-align: center;
@@ -123,7 +115,7 @@ header {
 
 .Seccion-Dos__Card{
     width: 330px;
-    height: 330px;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -170,109 +162,16 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 2rem;
-}
-
-.seccion__contacto form legend {
-    text-decoration: underline;
-    font-weight: bold;
 }
 
 /* Fin seccion contacto - formulario de contacto */
 
-/* Comienzo BLOG */
-
-.articulos__blog {
-    text-align: center;
-    line-height: 1.5rem;
-    padding: 2rem;
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-}
-
-.articulos__blog h2 {
-    text-decoration: underline;
-    font-weight: bold;
-    padding-bottom: 2rem;
-}
-
-/* Fin BLOG */
-
-/* Comienzo Productos */
-
-.Productos img {
-    width: 330px;
-    height: 220px;
-}
-
-.Productos {
-    display: grid;
-    grid-template-columns: 1fr 7fr;
-    grid-template-rows: repeat(3, 2fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    padding: 2rem;
-}
-
-.Productos__Lista-Fert { 
-    grid-area: 1 / 1 / 3 / 2; 
-    margin-top: 5rem;
-    padding: 1rem;
-}
-.Productos__Recomenado-Uno { 
-    grid-area: 1 / 2 / 2 / 3; 
-    display: flex;
-    border: solid darkgreen;
-}
-.Productos__Recomendado-Dos { 
-    grid-area: 2 / 2 / 3 / 3; 
-    display: flex;
-    border: solid darkgreen;
-}
-.Productos__Lista-Plantas { 
-    grid-area: 3 / 1 / 5 / 2;
-    padding: 1rem;
-}
-.Productos__Recomendado-Tres { 
-    grid-area: 3 / 2 / 4 / 3; 
-    display: flex;
-    border: solid darkgreen;
-}
-
-.Producto__Recomendado__Textos {
-    text-align: center;
-    margin: 1rem;
-    padding: 1rem;
-    line-height: 3rem;
-}
-
-.Producto__Recomendado__Textos h3 {
-    text-decoration: underline;
-    font-size: 2rem;
-}
-
-.Productos ul li {
-    list-style: none;
-    line-height: 2rem;
-}
-
-.Productos ul li a {
-    color: black;
-}
-
-.Productos__Titulos-lista {
-    text-align: left;
-    margin-bottom: 1rem;
-}
-
-/* Fin Productos */
 
 /* Comienzo footer */
 
 footer {
     background-image: url("../Imagenes/selva_urbana.jpg");
-    height: 90px;
+    height: auto;
     clear: both;
 }
 

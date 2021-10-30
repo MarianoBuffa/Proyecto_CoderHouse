@@ -17,7 +17,6 @@
         <nav class="header__navegador"><!-- Se modifica botonera por cambios de diseño -->
             <ul>
                 <li><a href="index.html">Principal</a></li>
-                <li><a href="Productos.html">Productos</a></li>
                 <li><a href="Blog.html">Blog</a></li>
                 <li><a href="Contacto.html"> Contacto</a></li>
             </ul>
@@ -30,40 +29,32 @@
     <section class="Primera-Seccion"><!-- Esta primera seccion tndria un texto y un slider -->
             <div class="Primera-Seccion__presentacion">
                 <h3>Sobre nuestra propuesta</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aperiam adipisci fugit temporibus a alias quas quisquam exercitationem facilis, quo dolor recusandae vero! Nam accusantium dolores, corrupti omnis hic quam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aperiam adipisci fugit temporibus a alias quas quisquam exercitationem facilis, quo dolor recusandae vero! Nam accusantium dolores, corrupti omnis hic quam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aperiam adipisci fugit temporibus a alias quas quisquam exercitationem facilis, quo dolor recusandae vero! Nam accusantium dolores, corrupti omnis hic quam.</p>
+                <p>La idea de esta web es que puedas encontrar toda la info necesaria para el cuidado de tus plantas y jardines, centrandonos en espacios urbanos, donde es dificil ver florecer a nuestras queridad.</p>
+                <p>La gran problematica siempre fue lograr una convivencia entre lo verde y el cemento, y desde aqui vas a poder encontrar tips e ideas muy buenas para tener un espacio perfecto entre tanta ciudad.</p>
+                <p>Y si tenes mas dudas o consultas, en la seccion de contactos podes dejarlas asi se te responde a la brevedad, tanto si sos cliente como si no lo sos.</p>
+                <p>Y no olvides pasar por las redes sociales de IG y FB, al final de la pagina vas a encontrar los links! :D</p>
             </div>
-            <div class="Primera-Seccion__imagen">
-                <img src="Imagenes/naturbana.jpg" alt="Naturaleza en edificios">
-            </div>
-    </section>
-    <section><!-- Aqui en esta seccion pondria 3 cajas con tarjetas, como se ve en la imagen -->
-        <h2 class="Titulo__Seccion-Dos">Consejos y Cuidados</h2>
-
-        <div class="Seccion-Dos">
-            <div class="Seccion-Dos__Card">
-                <img src="Imagenes/petunias.jpg">
-                <h4>Petunias y sus cuidados</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
-                <a href="#">Leer más</a>
-            </div>
-            
-            <div class="Seccion-Dos__Card">
-                <img src="Imagenes/pensamiento.jpg">
-                <h4>Como mantener los pensamientos</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
-                <a href="#">Leer más</a>
-            </div>
-            
-            <div class="Seccion-Dos__Card">
-                <img src="Imagenes/crisantemo.jpg">
-                <h4>La belleza de los crisantemos</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
-                <a href="#">Leer más</a>
-            </div>
-            
-        </div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Imagenes/crisantemo.jpg" class="d-block w-100" alt="crisantemo">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Imagenes/geranio.jpg" class="d-block w-100" alt="Geranios">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Imagenes/pensamiento.jpg" class="d-block w-100" alt="pensamientos">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+                </div>
     </section>
     <footer><!-- El footer tendria 2 cajas, una para un enu y otra para una caja con un boton de suscripcion -->
         <nav class="footer__botonera">

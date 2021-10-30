@@ -17,7 +17,6 @@
             <nav class="header__navegador"><!-- Se modifica botonera por cambios de diseño -->
                 <ul>
                     <li><a href="index.html">Principal</a></li>
-                    <li><a href="Productos.html">Productos</a></li>
                     <li><a href="Blog.html">Blog</a></li>
                     <li><a href="Contacto.html"> Contacto</a></li>
                 </ul>
@@ -27,31 +26,39 @@
                 <h2>Naturaleza en tu ciudad</h2>
             </div>
         </header>
-    <section class="seccion__contacto">
-        <form action="">
-            <legend>Registro de contacto</legend>
-            <label for="nombre">Nombre y Apellido: </label>
-            <input type="text" name="nombre" placeholder="Ingresa tu nombre" required>
-            <br>
-            <label for="mail">Mail de contacto</label>
-            <input type="email" name="mail" placeholder="ejemploe@ejemplo.com" required>
-            <br>
-            <label for="provincia">Provincia</label>
-            <select name="provincia">
-                <option value="Cordoba">Cordoba</option>
-                <option value="Catamarca">Catamarca</option>
-                <option value="Tucuman">Tucuman</option>
-                <option value="Buenos Aires">Buenos Aires</option>
+    <section class="seccion__contacto"><!-- Cambios en bootstrap - puse un form y lo modifique con mis preferencias -->
+        <form class="row g-3">
+            <div class="col-md-6">
+            <label for="Nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="Nombre">
+            </div>
+            <div class="col-md-6">
+            <label for="Apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="Apeliido">
+            </div>
+            <div class="col-12">
+            <label for="email" class="form-label">Mail</label>
+            <input type="email" class="form-control" id="email" placeholder="ejemplo@ejemplo.com">
+            </div>
+            <div class="col-12">
+            <label for="consulta" class="form-label">Consulta</label>
+            <input type="text" class="form-control" id="consulta" placeholder="Escribe tu consulta Aqui">
+            </div>
+            <div class="col-md-6">
+            <label for="Provincia" class="form-label">Provincia</label>
+            <input type="text" class="form-control" id="Provincia">
+            </div>
+            <div class="col-md-4">
+            <label for="cliente" class="form-label">¿Sos cliente?</label>
+            <select id="cliente" class="form-select">
+                <option selected>SI</option>
+                <option>NO</option>
             </select>
-            <br>
-            <label for="texto">Deja aqui tu consulta!</label>
-            <br>
-            <textarea name="texto" cols="30" rows="10" maxlength="500"></textarea>
-            <br>
-            <br>
-            <input type="submit" name="envio" value="Enviar">
-            <input type="reset" value="Limpiar valores">
-        </form>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-success">ENVIAR</button>
+            </div>
+            </form>
     </section>
     <footer><!-- El footer tendria 2 cajas, una para un enu y otra para una caja con un boton de suscripcion -->
         <nav class="footer__botonera">
